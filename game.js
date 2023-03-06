@@ -43,6 +43,15 @@ $("body").keypress(function() {
     $("h1").text(`Level 0`)
   }
 })
+
+// Function to start game for mobile devices
+$("h1").click(function() {
+  if (checkGameStart < 1 && checkGameStart < 2) {
+    checkGameStart ++;
+    nextSequence();
+    $("h1").text(`Level 0`)
+  }
+})
  
 // Detect button click and callback function
 $(".btn").click(function() {
